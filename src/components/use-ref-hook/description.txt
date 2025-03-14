@@ -1,0 +1,20 @@
+🔹 useRef Hook – All Use Cases with Examples
+🔹 What is useRef?
+The useRef hook in React is used for:
+✅ Accessing & modifying DOM elements
+✅ Storing values without causing re-renders
+✅ Keeping a reference to previous state values
+✅ Handling timers & intervals
+
+Unlike useState, changing a useRef value does NOT trigger a re-render.
+🔹 When to Use useRef Instead of useState?
+Use Case	useRef	useState
+Accessing DOM elements	✅ Yes	❌ No
+Storing values without re-rendering	✅ Yes	❌ No
+Tracking previous state	✅ Yes	❌ No
+Triggering UI updates	❌ No	✅ Yes
+Managing timers & intervals	✅ Yes	❌ No
+🚀 Final Thoughts
+✅ useRef is not reactive—changing ref.current does not trigger re-renders.
+✅ Use useRef for DOM manipulation, timers, previous state tracking, and storing values without re-renders.
+✅ For state updates that trigger re-renders, use useState instead.

@@ -1,0 +1,23 @@
+Implementing Context with a Reducer for Global State Management in React
+In React, the useContext hook allows you to share state across multiple components without having to pass props down manually. When the state is complex or involves multiple actions, it’s a good idea to use a reducer to handle actions and updates to the state in a more organized and predictable way.
+
+In this example, we will implement a global state management solution using Context API and useReducer.
+
+🔹 Step 1: Setup the Context and Reducer
+1.1 Create the StateContext
+We’ll create a context that will hold the global state and the dispatch function.
+
+1.2 Define the Reducer
+We’ll use a reducer to handle state updates based on dispatched actions.
+
+1.3 Create an Action Types File
+For better maintainability, it’s a good idea to define your action types in a separate file.
+
+How the State Updates:
+When an action is dispatched (e.g., dispatch({ type: 'SET_USER', payload: 'John Doe' })), it is handled by the reducer.
+The reducer checks the action's type, and if it matches any case (e.g., SET_USER), it updates the state accordingly.
+The updated state is passed down through the context and is available to all components that are consuming the context.
+🔹 Summary:
+Context allows us to share global state across components.
+useReducer provides a more structured way to manage complex state logic by defining actions and the state update process inside a reducer function.
+We’ve created a simple global state management solution where we can dispatch actions to update the user and theme and have those values available throughout the app.
