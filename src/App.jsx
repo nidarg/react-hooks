@@ -5,6 +5,7 @@ import Wrapper from './components/context-with-reducer/WrapperContextWithReducer
 import DynamicUseEfect from './components/use-effect/dynamicUseEfect';
 import FetchData from './components/use-effect/FetchData';
 import BasicUseReducerHook from './components/use-reducer/BasicUseReducerHook';
+import WrapperUseTransition from './components/use-transition/WrapperUseTransition';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       {/* <WrapperContextApi/> */}
       {/* <BasicUseReducerHook /> */}
       {/* <WrapperContextWithReducer /> */}
+      <WrapperUseTransition />
     </>
   );
 }
